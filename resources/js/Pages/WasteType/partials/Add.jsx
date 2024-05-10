@@ -38,7 +38,7 @@ export default function ModalAdd({ modal, onCancel, setModal }) {
     return (
         <Modal
             title="TAMBAH JENIS SAMPAH"
-            width={'75%'}
+            width={'50%'}
             open={modal}
             forceRender={true}
             footer={

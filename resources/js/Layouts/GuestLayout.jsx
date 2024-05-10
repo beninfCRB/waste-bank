@@ -13,20 +13,10 @@ export default function Guest({ children }) {
     return (
         <Layout>
             <Head title="Welcome" />
-            <Header
-                style={{
-                    position: 'sticky',
-                    top: 0,
-                    zIndex: 1,
-                    width: '100%',
-                }}
-                className='text-right'
-            >
-            </Header >
             <Content className="site-layout" style={{ padding: '0 50px' }}>
-                <div className='mt-10 grid place-content-center' style={{ padding: 24, minHeight: 380, background: colorBgContainer }}>
+                <div className='mt-40 flex items-center justify-center'>
                     <Card
-                        className='w-full'
+                        className='w-80'
                     >
                         {children}
                     </Card>

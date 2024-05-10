@@ -66,33 +66,33 @@ export default function Authenticated({ user, children }) {
                     }}
                     className='text-right'
                 >
-                    <Row>
-                        <Col>
-                            <Button
-                                type="text"
-                                icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-                                onClick={() => setCollapsed(!collapsed)}
-                                style={{
-                                    fontSize: '16px',
-                                    width: 64,
-                                    height: 64,
-                                }}
-                            />
-                        </Col>
-                        <Col>
-                            <Dropdown
-                                className='w-10'
-                                menu={{ items }}
-                                trigger={['click']}
-                            >
-                                <a onClick={(e) => e.preventDefault()}>
-                                    <Space className='hover:text-red-400 hover:scale-110'>
-                                        {user.name}
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </Col>
-                    </Row>
+                    <div className='container'>
+                        <div className='flex items-center justify-beetwen'>
+                            <div className='flex items-start'>
+                                <Button
+                                    type="text"
+                                    icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                                    onClick={() => setCollapsed(!collapsed)}
+                                    style={{
+                                        fontSize: '16px',
+                                        width: 64,
+                                        height: 64,
+                                    }}
+                                />
+                                <Dropdown
+                                    className='w-full items-end'
+                                    menu={{ items }}
+                                    trigger={['click']}
+                                >
+                                    <a onClick={(e) => e.preventDefault()}>
+                                        <Space className='hover:text-red-400 hover:scale-110'>
+                                            {user.name}
+                                        </Space>
+                                    </a>
+                                </Dropdown>
+                            </div>
+                        </div>
+                    </div>
                 </Header>
                 <Content
                     style={{

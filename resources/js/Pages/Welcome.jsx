@@ -31,6 +31,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         </Link>
                     ) : (
                         <>
+                            <div className="demo-logo-vertical" />
                             <Link
                                 href={route('login')}
                                 className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
@@ -49,7 +50,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 </div>
             </Header >
             <Content className="site-layout" style={{ padding: '0 50px' }}>
-                <div className='mt-10 place-content-center' style={{ padding: 24, minHeight: 380, background: colorBgContainer }}>
+                <div className='mt-10 flex items-center justify-center'>
                     <Card
                         className='w-full'
                     >

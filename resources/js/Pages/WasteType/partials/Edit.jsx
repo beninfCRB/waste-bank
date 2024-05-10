@@ -46,7 +46,7 @@ export default function ModalEdit({ modal, onCancel, setModal, data }) {
     return (
         <Modal
             title="UBAH JENIS SAMPAH"
-            width={'75%'}
+            width={'50%'}
             open={modal}
             forceRender={true}
             footer={
